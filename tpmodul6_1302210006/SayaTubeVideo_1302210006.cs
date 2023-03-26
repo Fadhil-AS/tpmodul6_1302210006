@@ -24,7 +24,7 @@ namespace tpmodul6_1302210006
         }
 
         public void IncreasePlayCount_1302210006(int playCount) {
-            Debug.Assert(title.Length <= 100 && title != null, "Judul video memiliki panjang maksimal 100 karakter dan tidak berupa null");
+            Debug.Assert(playCount <= 10000000 && title != null, "Input Input penambahan play count maksimal 10.000.000");
             try
             {
                 this.playCount = checked(this.playCount + playCount);
